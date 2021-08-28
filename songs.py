@@ -6,7 +6,7 @@ import requests
 import aiohttp
 import youtube_dl
 
-from SDSongBot import SDbot as app
+from Dinuramusicbot import SDbot as app
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
@@ -48,7 +48,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("📥 Downloading the song by @SDbotsz 📥")
+    m.edit("📥 Downloading the song by @DinuraNikalansuriy")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
