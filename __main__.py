@@ -1,11 +1,11 @@
 #Dinura <https://t.me/Dinuranikalansuriya>
 
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
-from SDSongBot.plugins import *
+from Dinura .plugins import *
 from pyrogram import idle, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from SDSongBot import SDbot as app
-from SDSongBot import LOGGER
+from Dinura  import Musicbot as app
+from Dinura  import LOGGER
 
 pm_start_text = """
 Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
