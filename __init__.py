@@ -1,13 +1,9 @@
 #SDBOTs <https://t.me/SDBOTs_Inifinity>
 
-import logging
-from pyrogram import Client
-from config import API_HASH, API_ID, BOT_TOKEN
+from os.path import dirname, basename, isfile, join
+import glob
 
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-)
-
-LOGGER = logging.getLogger(__name__)
-
-SDbot = Client("SDSongBot", bot_token=BOT_TOKEN, api_hash=API_HASH, api_id=API_ID)
+modules = glob.glob(join(dirname(__file__), "*.py"))
+__all__ = [
+    basename(f)[:-3] for f in modules if isfile(f) and not f.endswith("__init__.py")
+]
