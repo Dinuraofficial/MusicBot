@@ -1,4 +1,4 @@
-#SDBOTs <https://t.me/SDBOTs_Inifinity>
+#TechDroidLK <https://t.me/TechDroidLK>
 
 import os
 API_ID = int(os.getenv("API_ID"))
