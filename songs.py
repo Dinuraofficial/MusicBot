@@ -1,12 +1,12 @@
-# Plugin by @DinuraNikalansuriya
-#TechDroid  <https://t.me/TechDroidLK>
+# Plugin by @Mr_Dark_Prince
+#SDBOTs <https://t.me/SDBOTs_Inifinity>
 
 import os
 import requests
 import aiohttp
 import youtube_dl
 
-from Dinuramusicbot import SDbot as app
+from SDSongBot import SDbot as app
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
@@ -48,13 +48,13 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("📥 Downloading the song by @DinuraNikalansuriy")
+    m.edit("📥 Downloading the song by @SDbotsz 📥")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**~ Uploaded by @DinuraNikalansuriya ~**'
+        rep = '**~ Uploaded by @SDbotsz ~**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)

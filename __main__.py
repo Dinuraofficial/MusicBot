@@ -1,18 +1,18 @@
-#Dinura <https://t.me/Dinuranikalansuriya>
+#SDBOTs <https://t.me/SDBOTs_Inifinity>
 
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
-from Dinura .plugins import *
+from SDSongBot.plugins import *
 from pyrogram import idle, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from Dinura  import Musicbot as app
-from Dinura  import LOGGER
+from SDSongBot import SDbot as app
+from SDSongBot import LOGGER
 
 pm_start_text = """
 Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
-   Just send me the song name you want to download.
-      eg:```/song Stitches```
+😉 Just send me the song name you want to download.😋
+      eg:```/song Faded```
       
-A bot by @DinuraNikalansuriya
+A bot by @SDBotsz 🇱🇰
 """
 
 @app.on_message(filters.command("start"))
@@ -25,10 +25,10 @@ async def start(client, message):
             [
                 [
                      InlineKeyboardButton(
-                        text="Channel 🔊", url="https://t.me/TechDroidLK"
+                        text="Channel 🔊", url="https://t.me/SDbotsz"
                     ),
                     InlineKeyboardButton(
-                        text="Dev 🔥", url="https://t.me/Dinuranikalansuriya"
+                        text="Dev 🔥", url="https://t.me/Darkridersslk"
                     )
                 ]
             ]
@@ -39,5 +39,5 @@ async def start(client, message):
 
 
 app.start()
-LOGGER.info("✅ MusicBot is online.")
+LOGGER.info("✅ SDSongBot is online.")
 idle()
